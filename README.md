@@ -1,2 +1,2 @@
 # WebClockApp
-![appImage](Assets/ScreenShots/ClockApp.png)
+![appImage](Assets/ScreenShots/clockApp.png)
