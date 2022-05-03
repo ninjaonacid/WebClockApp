@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -59,10 +57,8 @@ public class NetworkRequest : MonoBehaviour
             
         } else
         {
-            Debug.Log(timeRequest.downloadHandler.text);
             TimeData time = JsonUtility.FromJson<TimeData>(timeRequest.downloadHandler.text);
             _currentDateTime = DateTime.Parse(time.datetime);
- 
         }
 
     }
